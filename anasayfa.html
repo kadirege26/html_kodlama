@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&display=swap');
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class ve Id'ler</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+  <script src="https://elfsightcdn.com/platform.js" async></script>   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!--Navbar-->
+    <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="/fotolarim/logo.png" alt="" width="70" height="54"class="d-inline-block align-text-top">Güntay
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/anasayfa.html">Ana Sayfa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/kartlarim.html">Ürünler</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            İletişim
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="tel:+905555555555">Telefon Araması</a></li>
+            <li><a class="dropdown-item" href="mailto:info@guntay.com">Email ile İletişim</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="https://www.instagram.com/" target="_blank">Sosyal Medya</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Kampanyalar Yakında...</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Arama Yap..." aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Ara</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    <!--Carousel Bölümü-->
+    <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://wowslider.com/sliders/demo-93/data1/images/sunset.jpg" class="d-block w-100" alt="..." style="height: 600px;">
+    <div class="carousel-caption d-none d-md-block">
+        <h5>Stoklarımızda Mevcut Olan Yüksek Kaliteli Güneş Paneli</h5>
+        <p style="color: white; font-size: 15px;">Mevcut stoklarımızda bulunan yükek kaliteli fiberkarbon ve alüminyum malzemelerden imal edilen ürünlerimizi inceleyin.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.etstur.com/letsgo/wp-content/uploads/2018/08/6.png" class="d-block w-100" alt="..." style="height: 600px;">
+        <div class="carousel-caption d-none d-md-block">
+        <h5>Sektörde Lider Olan Güneş Paneli Markanız</h5>
+        <p style="color: white; font-size: 15px;">Sektörde bulunan en kaliteli malzemelerle donatılmış ürünlerimizi inceleyin.</p>
+        <a class="btn btn-primary" href="/kartlarim.html" role="button">Daha Fazla Bilgi Al</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://blog.ciceksepeti.com/wp-content/uploads/2025/09/gunes-cicegi-780x470.webp" class="d-block w-100" alt="..." style="height: 600px;">
+       <div class="carousel-caption d-none d-md-block">
+        <h5>Sürdürülebilir Enerji Hizmetleri</h5>
+        <p style="color: white; font-size: 15px;">Sürdürülebilir enerji konusunda uzmanlaşmış ekibimizle birlikte sürdürülebilir enerji çözümleri sunuyoruz.</p>
+        <a href=""></a>
+        <button type="button" class="btn btn-danger" id="liveToastBtn">satın al</button>
+    
+    </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!--Hakkımızda Bölümü-->
+<div class="hakkimizda container text-center mt-5" style="color: black;">
+  <div class="row">
+  <div class="hakkimizda-metin col-sm-8">
+    <h1>Hakkımızda</h1>
+    <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet ullamcorper tortor a gravida. Sed imperdiet bibendum elementum. Ut vel lectus lacinia nisl facilisis rutrum in ac justo. In sagittis velit elit, eget tristique sem scelerisque ut. Pellentesque viverra vel lacus ut suscipit. Aliquam ipsum sapien, pulvinar quis quam nec, tempus euismod dui. Duis massa ligula, tincidunt et sodales a, tempus eu ligula. Etiam laoreet purus eget neque consectetur sagittis. Aliquam tincidunt ipsum eros, et sollicitudin urna tincidunt auctor. Suspendisse posuere diam at maximus gravida.
+Aenean fringilla sed quam sit amet dapibus. Proin magna turpis, ornare faucibus varius a, rhoncus et urna. Integer sit amet cursus mi, ac mollis sapien. Praesent malesuada massa nulla, lacinia consectetur purus posuere vel. Sed lorem magna, pellentesque eget mi eget, vestibulum imperdiet nunc. Nulla ut venenatis risus. Nullam maximus finibus lectus, id placerat leo pulvinar ac. Phasellus facilisis ut mi et facilisis. Nulla facilisi.
+</p>  
+<br>
+<p>
+Nunc condimentum at nisl at laoreet. Suspendisse neque leo, blandit eu dolor id, aliquet consequat magna. Nunc non consequat nisi. Proin lacinia consequat sapien, non venenatis arcu egestas eget. Morbi sed tortor cursus, ultrices purus non, imperdiet mi. Nulla quis nunc vitae enim vehicula sagittis eget eu tortor. Vivamus pharetra augue vitae semper semper. Sed ultricies at ipsum nec facilisis. Nunc varius ac mi vel eleifend. Fusce sed nunc tempus, aliquet nisi eu, porta leo.
+</p>
+<div class="video-alani" style="text-align: left; font-size: large;">
+  <ul>
+    <li>qwe</li>
+    <li>qwe</li>
+    <li>qwe</li>
+    <li>qwe</li>
+    <li>qwe</li>
+  </ul>
+  </div>
+</div>
+
+  <div class="hakkimizda-sag col-sm-4">
+  <div class="elfsight-app-d9314632-7a28-4a24-a723-8e8cdd6c3edb" data-elfsight-app-lazy></div>
+  </div>
+  </div>
+</div>
+<!--Video Alanı Bölümü-->
+    <footer>
+        <div class="footer">
+            <div id="iletisim">
+                <h1 style="font-family: Arial, Helvetica, sans-serif;">İletişim</h1>
+                <div class="iletisimkutum">
+                    <img src="/fotolarim/iletisim.png" alt="" style="width: 50px;">
+                    <p class="deneme" style="font-size: 10px; margin-top: 20px;">Bize Ulaşın: +90 555 555 5555</p>
+                </div>
+                <div class="iletisimkutum">
+                    <a href="https://www.instagram.com/aliyallniz/" target="_blank" style="text-decoration: none; color: black; display: flex;"><img src="https://img.freepik.com/free-vector/instagram-logo_1199-122.jpg?semt=ais_hybrid&w=740&q=80" alt="" style="width: 50px; margin-right: 10px;">
+                    <p class="deneme" style="font-size: 10px; margin-top: 20px;">Instagram: GünTay</p></a>
+                </div>
+            </div>
+        </div>
+        <div>
+          
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="/fotolarim/logo.png" class="rounded me-2" alt="..." style="width: 100px;">
+      <strong class="me-auto">Gültay</strong>
+      <small>10sn önce</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body" style="color: black;">
+      Satın alma sayfasına yönlendiriliyorsunuz
+    </div>
+  </div>
+</div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
+<script>const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastTrigger.addEventListener('click', () => {
+
+    toastTrigger.innerHTML =`
+    <span class="spinner-grow spinner-grow-sm text-warning" aria-hidden="true"></span>
+    <span role="status">Yükleniyor...</span>`;
+    toastBootstrap.show()
+    setTimeout(() => {
+      window.location.href = "/satinAl.html";
+    },2000);
+  })
+}</script>
+<style>
+    /*Tabloar*/
+    label{
+        color:black;
+    }
+    thead, tr, td {
+        color:black;
+        border:2px solid black;
+        border-radius: 10px;
+    }
+    table{
+        margin-top:20px;
+    }
+    .boyut{
+        background-color: wheat;
+    }
+    .marka{
+        background-color: gold;
+    }
+    .fiyat{
+        padding:5px;
+        background-color: red;
+        color:white;
+    }
+
+    /* class'ta nokta id de kare*/
+
+    .butoncuk{
+        background-color: green;
+        color: white;
+        border-radius: 5px;
+        border-color: green;
+        margin:10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #butonum{
+        background-color: yellow;
+        padding-top:10px;
+        padding-bottom: 10px;
+    }
+    body{
+        background-color: #D0D0D0;
+        color:white;
+    }
+    p{
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        text-align: justify;
+    }
+    input{
+        font-weight: bold;
+    }
+    .ucuz{
+        color: red;
+        font-size:25px;
+        font-family: "Bitcount Ink";
+        font-weight: bolder;
+        background-color: gold;
+    }
+    #pahalı{
+        color:brown;
+        font-size:15px;
+        font-weight: lighter;
+        background-color: cadetblue;
+    }
+    #buton1{
+        background-color: black;
+        border-radius: 100px;
+        padding: 10px;
+        margin: 10px;
+        width: 100px;
+    }
+    .hero{
+        padding: 80px 10px;
+        text-align: center;
+        border-radius: 20px;
+        background-image: url(/fotolarim/hero1.webp);
+    }
+    .hero h1{
+        margin-top:120px;
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .hero p{
+        font-size:15px;
+        margin-top:15px;
+        color:white;
+    }
+    .footer{
+        background: linear-gradient(135deg, rgb(182, 187, 84), rgb(30, 95, 142));
+    }
+    .iletisimkutum{
+        display: flex;
+        justify-content: left;
+    }
+</style>

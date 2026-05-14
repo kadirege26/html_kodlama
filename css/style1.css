@@ -1,0 +1,146 @@
+h1{
+    font-size: x-large;
+    justify-content: center;
+    display: flex;
+}
+.urunler{
+    justify-content: center;
+    display: flex;
+    color: gray;
+}
+.card{
+    display: flex;
+    justify-content: center;
+}
+.card-container-vestel{
+    background-color: aqua;
+    margin: 20px;
+    border-radius: 15px;
+    border: black solid 1px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px 10px rgb(33, 184, 169);
+    width: 150px;
+    height: 150px;
+    position: relative;
+    perspective: 1000px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAnjtkfFZuARFX6_noiUM95jiiWditYDYuBQ&s");
+}
+.card-container-beko{
+background-color: aqua;
+    margin: 20px;
+    border-radius: 15px;
+    border: black solid 1px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px 10px rgb(33, 184, 169);
+    width: 150px;
+    height: 150px;
+    position: relative;
+    perspective: 1000px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAnjtkfFZuARFX6_noiUM95jiiWditYDYuBQ&s");
+}
+.card-container-arcelik{
+background-color: aqua;
+    margin: 20px;
+    border-radius: 15px;
+    border: black solid 1px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px 10px rgb(33, 184, 169);
+    width: 150px;
+    height: 150px;
+    position: relative;
+    perspective: 1000px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAnjtkfFZuARFX6_noiUM95jiiWditYDYuBQ&s");
+}
+
+.buton{
+    justify-content: center;
+    display: flex;
+}
+button{
+    padding: 10px;
+    border-radius: 100px;
+    text-decoration: underline;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 1ms;
+    background-color: rgba(0, 255, 255);
+    border: none;
+    transition: 0.3s;
+}
+button:hover{
+    opacity: 0.7;
+    background-color: rgb(77, 130, 24);
+}
+
+#gerigelmefotom{
+    width: 100px;
+    height: 100px;
+}
+
+.back, .front{
+    margin-top: 10px;
+    margin-left:10px;
+    position: absolute;        
+    backface-visibility: hidden; /* Arkası dönük olan yüzü gizle (Sihir burada!) */
+    transition: 0.6s;
+    color:white;
+}
+
+.front{
+    transform: rotateY(0deg);
+}
+.back{
+    margin-right: 10px;
+    margin-bottom: 40px;
+    transform: rotateY(180deg);
+}
+
+.card-container-vestel:hover .front{
+    transform: rotateY(-180deg);
+}
+.card-container-vestel:hover .back{
+    transform: rotateY(0deg);
+}
+.card-container-beko:hover .front{
+    transform: rotateY(-180deg);
+}
+.card-container-beko:hover .back{
+    transform: rotateY(0deg);
+}
+.card-container-arcelik:hover .front{
+    transform: rotateY(-180deg);
+}
+.card-container-arcelik:hover .back{
+    transform: rotateY(0deg);
+}
+
+.back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* taşmadan doldurur */
+    border-radius: 15px;
+}
+
+.geriGel{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buton{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: 630px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.buton:hover{
+    opacity: 0.5;
+}

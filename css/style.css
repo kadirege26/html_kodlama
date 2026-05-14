@@ -1,0 +1,70 @@
+/* Sayfanın genel ayarları */
+body {
+    background-color: #f0f4f8;
+    font-family: sans-serif;
+    display: flex;             /* Elemanları esnek dizmemizi sağlar */
+    flex-direction: column;    /* Her şeyi üst üste koy (Başlık, Kartlar, Buton) */
+    align-items: center;       /* Yatayda tam ortala */
+    padding: 20px;
+}
+
+/* Kartları yan yana dizen ana kutu */
+.card-container {
+    display: flex;             /* İçindeki kartları yan yana diz */
+    flex-wrap: wrap;           /* Ekran daralırsa kartları aşağıya at */
+    justify-content: center;   /* Kartları ortala */
+    gap: 30px;                 /* Kartlar arasında boşluk bırak */
+}/* Kartın dış çerçevesi */
+.card {
+    position: relative;        /* İçindeki yüzlerin (ön/arka) buna göre hizalanması için */
+    width: 250px;              /* Sabit genişlik */
+    height: 350px;             /* Sabit yükseklik */
+    perspective: 1000px;       /* Dönüşün 3D görünmesi için derinlik */
+}
+
+/* Ön ve Arka yüzlerin ortak özellikleri */
+.card-front, .card-back {
+    position: absolute;        /* İki yüzü üst üste bindirir */
+    width: 100%;               /* Kartın tamamını kapla */
+    height: 100%;              /* Kartın tamamını kapla */
+    border-radius: 15px;       /* Köşeleri yuvarla */
+    backface-visibility: hidden; /* Arkası dönük olan yüzü gizle (Sihir burada!) */
+    transition: 0.6s;          /* Dönüş hızı (0.6 saniye) */
+    
+    /* İçerideki yazıları ortala */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Hafif gölge */
+}/* Kartın ilk görünen yüzü */
+.card-front {
+    background-color: white;
+    transform: rotateY(0deg);  /* Başlangıçta düz durur */
+}
+
+/* Kartın arka yüzü */
+.card-back {
+    background-color: #333;    /* Koyu gri arka plan */
+    color: white;              /* Beyaz yazı */
+    transform: rotateY(180deg);/* Başlangıçta ters durur (gizlidir) */
+}
+
+/* Üzerine gelince (Hover) yapılacak hareket */
+.card:hover .card-front {
+    transform: rotateY(-180deg); /* Ön yüzü ters çevir */
+}
+
+.card:hover .card-back {
+    transform: rotateY(0deg);    /* Arka yüzü düzelt (göster) */
+}.marka-vestel { border-top: 8px solid gold; }
+.marka-arcelik { border-top: 8px solid wheat; }
+.marka-beko { border-top: 8px solid red; }
+
+/* Fiyat yazısı */
+.price-tag {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
